@@ -1,0 +1,113 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .contact-container {
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      flex-wrap: wrap;
+      gap: 5rem;
+    }
+
+    .input-group {
+      position: relative;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      outline: none;
+      background: none;
+      align-self: center;
+      margin: 0.7rem;
+      padding: 0.5rem;
+    }
+
+    .input-group label {
+      position: absolute;
+      top: 1.5rem;
+      left: 14px;
+      font-size: 0.9rem;
+      color: #666;
+      transition: 0.2s;
+      pointer-events: none;
+    }
+
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group textarea:focus + label,
+    .input-group textarea:not(:placeholder-shown) + label {
+      top: 0.4rem;
+      left: 10px;
+      background: #fff;
+      padding: 0 4px;
+      font-size: 0.75rem;
+      color: #007bff;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      color: white;
+      background: #007bff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .success-msg {
+      color: green;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .error-msg {
+      color: red;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    #contact-form {
+      margin: 0;
+      gap: 51px;
+    }
